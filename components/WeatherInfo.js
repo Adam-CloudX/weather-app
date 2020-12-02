@@ -14,6 +14,7 @@ export default function WeatherInfo({ currentWeather }) {
   const iconUrl = `https://openweathermap.org/img/wn/${icon}@4x.png`;
   return (
     <View style={styles.weatherInfo}>
+      <Text style={styles.appName}>My Weather</Text>
       <Text style={styles.textCity}>{name}</Text>
       <Image style={styles.weatherIcon} source={{ uri: iconUrl }} />
       <Text style={styles.textPrimary}>{temp}°</Text>
@@ -47,5 +48,11 @@ const styles = StyleSheet.create({
   textCity: {
     fontSize: 30,
     fontWeight: "500",
+  },
+  appName: {
+    fontSize: 50,
+    fontWeight: "bold",
+    color: PRIMARY_COLOR,
+    alignItems: "center",
   },
 });

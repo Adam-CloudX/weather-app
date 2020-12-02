@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         top: -30,
       },
       android: {
-        top: 30,
+        top: 20,
       },
     }),
     margin: 10,
